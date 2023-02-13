@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8c9543b6.css",
+    "main.js": "/static/js/main.97c7510b.js",
+    "static/js/787.c78070af.chunk.js": "/static/js/787.c78070af.chunk.js",
+    "static/media/bath.jpg": "/static/media/bath.f99ce0c932ddb8d4f4bd.jpg",
+    "static/media/forum-all-400-normal.woff": "/static/media/forum-all-400-normal.49a4fbc328a644a2acbd.woff",
+    "static/media/image1.jpg": "/static/media/image1.e292d0c9f6e2debab2df.jpg",
+    "static/media/logo1.png": "/static/media/logo1.cf1b6d494f01c4c6e2f2.png",
+    "static/media/forum-latin-400-normal.woff2": "/static/media/forum-latin-400-normal.2b94df114ab1abbfe6a7.woff2",
+    "static/media/logo2.png": "/static/media/logo2.9e6958214cfc15bac009.png",
+    "static/media/forum-latin-ext-400-normal.woff2": "/static/media/forum-latin-ext-400-normal.c6d4a7dd0cccde4cd46b.woff2",
+    "static/media/img2.webp": "/static/media/img2.0fc296dd7609dbec4be9.webp",
+    "static/media/forum-cyrillic-400-normal.woff2": "/static/media/forum-cyrillic-400-normal.ab82ba653070b840ed52.woff2",
+    "static/media/forum-cyrillic-ext-400-normal.woff2": "/static/media/forum-cyrillic-ext-400-normal.e7a0f1ef533b5cc6a23e.woff2",
+    "static/media/img3.webp": "/static/media/img3.4405dd53c84c46b93699.webp",
+    "static/media/img4.webp": "/static/media/img4.e825e9cf83f86bdb24c3.webp",
+    "static/media/img1.webp": "/static/media/img1.b6fc5f0a452e226b6360.webp",
+    "static/media/uniqueIcon.png": "/static/media/uniqueIcon.8564f1b13e9cf391ae34.png",
+    "index.html": "/index.html",
+    "main.8c9543b6.css.map": "/static/css/main.8c9543b6.css.map",
+    "main.97c7510b.js.map": "/static/js/main.97c7510b.js.map",
+    "787.c78070af.chunk.js.map": "/static/js/787.c78070af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c9543b6.css",
+    "static/js/main.97c7510b.js"
+  ]
+}
