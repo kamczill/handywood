@@ -50,6 +50,7 @@ const About = () => {
                     _before={{ content: '""', display: 'inline-block', position:'absolute', bg: '#fef6e6', top: '-2rem', left: '-1rem', width: '110%', p: '2rem', transform: 'rotate(-1.7deg)' }}
                     _after={{ content: '""', display: 'inline-block', position:'absolute', bg: '#fef6e6', bottom: '-2rem', left: '-1rem', width: '110%', p: '2rem', transform: 'rotate(1.7deg)' }}
                     ref={imagesRef}
+                    overflow={'hidden'}
                 >
                     <Image src={bathImg} w={['xs', 'xs', ,'md']} h={['xl','2xl']} objectFit='cover'/>
                     <Flex direction='column' position='absolute' top={['-1rem','3rem']} left={['-1.2rem','-6rem']} bg='white' p={['1rem','1.5rem']} borderRadius='18px' maxW={['150px', '200px']} boxShadow='-20px -17px 24px -24px rgba(0,0,0,0.75)'>
