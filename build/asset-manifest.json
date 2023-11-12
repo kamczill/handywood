@@ -1,12 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.7f4291dc.css",
-    "main.js": "/static/js/main.bdbba182.js",
+    "main.js": "/static/js/main.6655e5ff.js",
     "static/js/787.c78070af.chunk.js": "/static/js/787.c78070af.chunk.js",
     "static/media/szafka-lazienkowa-mala.webp": "/static/media/szafka-lazienkowa-mala.c06bf1b36b4c7772b7dc.webp",
     "static/media/szafka-lazienkowa-rio.webp": "/static/media/szafka-lazienkowa-rio.4f9ee11fd6f7a5adcb85.webp",
     "static/media/bath.jpg": "/static/media/bath.f99ce0c932ddb8d4f4bd.jpg",
     "static/media/forum-all-400-normal.woff": "/static/media/forum-all-400-normal.49a4fbc328a644a2acbd.woff",
+    "static/media/konsola-z-szufladami.webp": "/static/media/konsola-z-szufladami.36a8a25b836f4ddd69bd.webp",
+    "static/media/konsola-bez-szuflad.webp": "/static/media/konsola-bez-szuflad.06233b9de9a14bab24c8.webp",
     "static/media/image1.jpg": "/static/media/image1.e292d0c9f6e2debab2df.jpg",
     "static/media/szafka-nocna.webp": "/static/media/szafka-nocna.f296e82c41e2da2a09ed.webp",
     "static/media/logo1.png": "/static/media/logo1.cf1b6d494f01c4c6e2f2.png",
@@ -14,9 +16,7 @@
     "static/media/logo2.png": "/static/media/logo2.9e6958214cfc15bac009.png",
     "static/media/forum-latin-ext-400-normal.woff2": "/static/media/forum-latin-ext-400-normal.c6d4a7dd0cccde4cd46b.woff2",
     "static/media/nogi-W.webp": "/static/media/nogi-W.2a62e3ee3a12e9d3e8f1.webp",
-    "static/media/konsola-bez-szuflad.webp": "/static/media/konsola-bez-szuflad.b29231623dc2c90a47a1.webp",
     "static/media/szafka-lazienkowa-duza.webp": "/static/media/szafka-lazienkowa-duza.1a07ce0c6ff1e3305b21.webp",
-    "static/media/konsola-z-szufladami.webp": "/static/media/konsola-z-szufladami.4b36194b753e7625de29.webp",
     "static/media/forum-cyrillic-400-normal.woff2": "/static/media/forum-cyrillic-400-normal.ab82ba653070b840ed52.woff2",
     "static/media/nogi-feniks.webp": "/static/media/nogi-feniks.5c1c296f2099b6f871bf.webp",
     "static/media/nogi-pajak.webp": "/static/media/nogi-pajak.b52263f1a85d028f3ac0.webp",
@@ -32,11 +32,11 @@
     "static/media/nogi-praga.webp": "/static/media/nogi-praga.e1c577629e09bbf9a037.webp",
     "index.html": "/index.html",
     "main.7f4291dc.css.map": "/static/css/main.7f4291dc.css.map",
-    "main.bdbba182.js.map": "/static/js/main.bdbba182.js.map",
+    "main.6655e5ff.js.map": "/static/js/main.6655e5ff.js.map",
     "787.c78070af.chunk.js.map": "/static/js/787.c78070af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f4291dc.css",
-    "static/js/main.bdbba182.js"
+    "static/js/main.6655e5ff.js"
   ]
 }
