@@ -47,19 +47,16 @@ const About = () => {
                 <Box
                     position='relative'
                     minWidth={['xs', 'xs', ,'md']}
-                    _before={{ content: '""', display: 'inline-block', position:'absolute', bg: '#fef6e6', top: '-2rem', left: '-1rem', width: '110%', p: '2rem', transform: 'rotate(-1.7deg)' }}
-                    _after={{ content: '""', display: 'inline-block', position:'absolute', bg: '#fef6e6', bottom: '-2rem', left: '-1rem', width: '110%', p: '2rem', transform: 'rotate(1.7deg)' }}
                     ref={imagesRef}
-                    overflow={'hidden'}
                 >
-                    <Image src={bathImg} w={['xs', 'xs', ,'md']} h={['xl','2xl']} objectFit='cover'/>
+                    <Image alt='Meble łazienkowe' src={bathImg} w={['xs', 'xs', ,'md']} h={['xl','2xl']} objectFit='cover'/>
                     <Flex direction='column' position='absolute' top={['-1rem','3rem']} left={['-1.2rem','-6rem']} bg='white' p={['1rem','1.5rem']} borderRadius='18px' maxW={['150px', '200px']} boxShadow='-20px -17px 24px -24px rgba(0,0,0,0.75)'>
-                        <Image src={homeIcon} w='50px'/>
+                        <Image alt='Wykonanie' src={homeIcon} w='50px'/>
                         <Text fontWeight='700' fontSize={['lg','xl']} pt='.5rem'>Wykonanie</Text>
                         <Text color='gray.600' fontSize={['md']}>Gwarantujemy dbałość o wszelkie detale</Text>
                     </Flex>
                     <Flex direction='row' gap='1rem' position='absolute' align='center' justify='center' bottom='-.5rem' right='3rem' bg='white' p={['.7rem','1rem']} borderRadius='5px' zIndex='1' boxShadow='-20px 20px 30px -24px rgba(0,0,0,0.75)' >
-                        <Image src={uniqueIcon} w='50px' />
+                        <Image alt='Unikalność' src={uniqueIcon} w='50px' />
                         <Text fontWeight='700' fontSize='lg'>Wyjątkowość</Text>
                     </Flex>
                 </Box>

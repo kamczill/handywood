@@ -44,17 +44,17 @@ const Header = () => {
         </Flex>
         <Flex  direction='row' justify={['center']} align='center' gap='1rem' position='relative'>
             <Flex display={['none', 'block', 'block']} mb='6rem'>
-                <Image src='images/header/1.webp' w={['3xs','2xs']} h={['2xs', 'sm','md']} objectFit='cover' boxShadow='-14px 17px 63px -26px rgba(0,0,0,0.66)' />
+                <Image alt='Realizacja mebli' src='images/header/1.webp' w={['3xs','2xs']} h={['2xs', 'sm','md']} objectFit='cover' boxShadow='-14px 17px 63px -26px rgba(0,0,0,0.66)' />
             </Flex>
             <Flex display={['none', 'block', 'block']} mt='3rem'>
-                <Image src='images/header/2.webp' w={['2xs']} h={['2xs', 'sm','md']} objectFit='cover' boxShadow='-14px 17px 63px -26px rgba(0,0,0,0.66)' />
+                <Image alt='Realizacja mebli' src='images/header/2.webp' w={['2xs']} h={['2xs', 'sm','md']} objectFit='cover' boxShadow='-14px 17px 63px -26px rgba(0,0,0,0.66)' />
 
             </Flex>
             <Flex>
-                <Image src='images/header/3.webp' w={['2xs']} h={['md','xl']} objectFit='cover' boxShadow='-14px 17px 63px -26px rgba(0,0,0,0.66)' />
+                <Image alt='Realizacja mebli' src='images/header/3.webp' w={['2xs']} h={['md','xl']} objectFit='cover' boxShadow='-14px 17px 63px -26px rgba(0,0,0,0.66)' />
             </Flex>
             <Box position='absolute' bottom={['0', '0', 'none']}  top={['none', 'none', '0']} left='9rem' >
-                <Image src={logo} w='200px' h='80px' objectFit='cover' borderRadius='5px' transform='rotate(20deg)'/>
+                <Image alt='Realizacja mebli' src={logo} w='200px' h='80px' objectFit='cover' borderRadius='5px' transform='rotate(20deg)'/>
             </Box>
         </Flex>
     </Flex>

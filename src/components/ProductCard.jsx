@@ -3,7 +3,7 @@ import { Text, Box, Flex, Image, Card, CardHeader, CardBody, CardFooter, Stack, 
 
 import { gsap } from 'gsap'
 import ModalBtn from './ModalBtn'
-const ProductCard = ({img, title, desc, addedPrice}) => {
+const ProductCard = ({img, title, desc, addedPrice, priceOffer, additionalText}) => {
 
     const cardRef = useRef();
 
@@ -14,7 +14,7 @@ const ProductCard = ({img, title, desc, addedPrice}) => {
             <CardBody>
                 <Image
                 src={img}
-                alt='Stol'
+                alt={title}
                 borderRadius='lg'
                 />
                 <Stack mt='6' spacing='3'>
@@ -24,7 +24,7 @@ const ProductCard = ({img, title, desc, addedPrice}) => {
                 </Text>
                 </Stack>
                 <Box marginTop='12px'>
-                    <ModalBtn title={title} addedPrice={addedPrice} />
+                    <ModalBtn title={title} addedPrice={addedPrice} priceOffer={priceOffer} additionalText={additionalText} />
                 </Box>
             </CardBody>
             <Divider />

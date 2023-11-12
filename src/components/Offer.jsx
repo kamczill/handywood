@@ -1,126 +1,18 @@
 import React, {useRef} from 'react'
 import { Flex, Text } from '@chakra-ui/react'
 import ProductCard from './ProductCard'
-import { useEffect } from 'react'
-import nogiDebowe from './../assets/products/nogi-debowe.webp'
-import nogiAsymetryczne1 from './../assets/products/nogi-asymetryczne-1.webp'
-import nogiAsymetryczne2 from './../assets/products/nogi-asymetryczne-2.webp'
-import nogiFeniks from './../assets/products/nogi-feniks.webp'
-import nogiPajak from './../assets/products/nogi-pajak.webp'
-import nogiPraga from './../assets/products/nogi-praga.webp'
-import nogiProste from './../assets/products/nogi-proste.webp'
-import nogiTrapez from './../assets/products/nogi-trapez.webp'
-import nogiU from './../assets/products/nogi-u.webp'
-import nogiW from './../assets/products/nogi-W.webp'
-import nogiX from './../assets/products/nogi-x.webp'
-
-const stoly = [
-  {
-    'title': 'Pająk',
-    'desc': '',
-    'addedPrice': 150,
-    'img': nogiPajak
-  },
-  {
-    'title': 'Asymetryczny I',
-    'desc': '',
-    'addedPrice': 150,
-    'img': nogiAsymetryczne1
-  },
-  {
-    'title': 'Trapez',
-    'desc': '',
-    'addedPrice': 0,
-    'img': nogiTrapez
-  },
-  {
-    'title': 'W',
-    'desc': '',
-    'addedPrice': 700,
-    'img': nogiW
-  },
-  {
-    'title': 'Asymetryczny 2',
-    'desc': '',
-    'addedPrice': 150,
-    'img': nogiAsymetryczne2
-  },
-  {
-    'title': 'Dębowe',
-    'desc': '',
-    'addedPrice': 0,
-    'img': nogiDebowe
-  },
-  {
-    'title': 'Proste I',
-    'desc': '',
-    'addedPrice': 100,
-    'img': nogiProste
-  },
-  {
-    'title': 'X',
-    'desc': '',
-    'addedPrice': 100,
-    'img': nogiX
-  },
-  {
-    'title': 'Feniks',
-    'desc': '',
-    'addedPrice': 300,
-    'img': nogiFeniks
-  },
-  {
-    'title': 'Typ Praga',
-    'desc': '',
-    'addedPrice': 550,
-    'img': nogiPraga
-  },
-]
-
-const konsole = [
-  {
-    'title': 'Z szufladami',
-    'desc': 'Posiada system cichego domykania!',
-    'addedPrice': 0,
-    'img': ''
-  },
-  {
-    'title': 'Bez szuflad',
-    'desc': '',
-    'addedPrice': 0,
-    'img': ''
-  }
-]
-
-const szafki = [
-  {
-    'title': 'Łazienkowa mała',
-    'desc': '',
-    'img': ''
-  },
-  {
-    'title': 'Łazienkowa duża',
-    'desc': '',
-    'img': ''
-  },
-]
+import { stoly, szafki, konsole } from './../data'
 
 const Offer = () => {
   const productsRef = useRef();
 
-  
-  useEffect(() => {
-    
-    console.log(productsRef.current.offsetWidth)
-  }, [])
-    
   return (
     <Flex direction='column' bg='#ab6e0c4f' py='5rem' position='relative' id='products'>
     <Text fontWeight='600' fontSize='5xl' align='center' >Nasza Oferta</Text>
 
     <Flex direction='column' justifyContent='center' alignItems='center'>
     <Text fontWeight='600' fontSize='3xl' align='center' paddingTop='2rem'>Stoły</Text>
-    <Text fontWeight='600' fontSize='lg' align='center' paddingTop='1rem' px='20px' maxW='760px'>
+    <Text fontWeight='600' fontSize='lg' align='center' paddingTop='1rem' px='20px' maxW='1200px'>
     Każdy blat jest wykonany z litego drewna dębowego. Nogi wykonujemy
     z pomalowanej zazwyczaj na czarno stali, jednak dajemy klientom możliwość wyboru koloru jak i kształtu.
     </Text>
@@ -129,6 +21,7 @@ const Offer = () => {
       stoly.map((item, idx) => (
         <>
         <ProductCard 
+          key={item.title}
           img={item.img}
           title={item.title}
           desc={item.desc}
@@ -140,24 +33,55 @@ const Offer = () => {
     </Flex>  
     
     <Text fontWeight='600' fontSize='3xl' align='center' paddingTop='2rem'>Konsole</Text>
-    <Text fontWeight='600' fontSize='lg' align='center' paddingTop='1rem' px='20px' maxW='760px'>
-    Każdy blat jest wykonany z litego drewna dębowego. Nogi wykonujemy
-    z pomalowanej zazwyczaj na czarno stali, jednak dajemy klientom możliwość wyboru koloru jak i kształtu.
+    <Text fontWeight='600' fontSize='lg' align='center' paddingTop='1rem' px='20px' maxW='1200px'>
+    Każdy blat naszych konsoli jest wykonany z litego drewna dębowego, co gwarantuje ich trwałość i elegancki wygląd. 
+    Podstawa, wykonana z pomalowanej zazwyczaj na czarno stali, zapewnia solidne wsparcie, 
+    a jednocześnie dodaje nowoczesnego charakteru. Dajemy naszym klientom możliwość wyboru nie tylko koloru, 
+    ale również kształtu podstawy, aby idealnie pasowała do ich indywidualnych potrzeb i preferencji.
     </Text>
     <Flex flexWrap='wrap' alignItems={['start', 'start']} justifyContent={['start', 'start', 'center']} ref={productsRef}>
       {
       konsole.map((item, idx) => (
         <>
-        <ProductCard 
-          img={nogiDebowe}
+        <ProductCard
+          key={item.title}
+          img={item.img}
           title={item.title}
           desc={item.desc}
-          addedPrice={item.addedPrice}
+          priceOffer={item.priceOffer}
+          additionalText={item.additionalText}
         />
         </>
       ))
       }
     </Flex>  
+    <Text fontWeight='600' fontSize='3xl' align='center' paddingTop='2rem'>Szafki</Text>
+    <Text fontWeight='600' fontSize='lg' align='center' paddingTop='1rem' px='20px' maxW='1200px'>
+    Każda nasza szafka jest wykonana z litego drewna dębowego, co zapewnia jej wytrzymałość i unikatowy wygląd. 
+    Ramy i drzwi szafek są starannie wykończone, z możliwością wyboru koloru według preferencji klienta. 
+    Stalowe elementy, zazwyczaj malowane na czarno, dodają nowoczesnego charakteru, 
+    jednak oferujemy naszym klientom swobodę wyboru kolorystyki i stylu tych metalowych akcentów, 
+    aby idealnie komponowały się z ich przestrzenią i gustem.
+    </Text>
+    <Flex flexWrap='wrap' alignItems={['start', 'start']} justifyContent={['center']} ref={productsRef}>
+      {
+      szafki.map((item, idx) => (
+        <>
+        <ProductCard
+          key={item.title}
+          img={item.img}
+          title={item.title}
+          desc={item.desc}
+          priceOffer={item.priceOffer}
+          additionalText={item.additionalText}
+        />
+        </>
+      ))
+      }
+    </Flex>
+    <Text fontWeight='600' fontSize='lg' align='center' paddingTop='1rem' px='20px' maxW='1200px'>
+    Odwiedźcie nasz Instagram, by zobaczyć nasze loftowe realizacje. Jeśli szukacie czegoś unikatowego, co nie jest w naszej ofercie, skontaktujcie się z nami. Chętnie podejmiemy współpracę, by stworzyć meble idealne dla Waszego wnętrza!
+    </Text>
 </Flex>
 </Flex>
   )

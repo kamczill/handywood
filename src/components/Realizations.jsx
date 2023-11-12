@@ -46,28 +46,28 @@ const Realizations = () => {
                 <TabPanel m='0' p='0'>
                     <MySwiper>
                         {stolyImg.map(img => (
-                            <SwiperSlide><Image src={`/images/stoly/${img}`}  mb='1rem' h={['sm', 'sm', 'xl']} objectFit='cover'/></SwiperSlide>
+                            <SwiperSlide><Image alt='Realizacja stołów' src={`/images/stoly/${img}`}  mb='1rem' h={['sm', 'sm', 'xl']} objectFit='cover'/></SwiperSlide>
                         ))}
                     </MySwiper>
                 </TabPanel>
                 <TabPanel>
                     <MySwiper>
                             {szafkiImg.map(img => (
-                                <SwiperSlide><Image src={`/images/szafki/${img}`}   mb='1rem'h={['sm', 'sm', 'xl']} objectFit='cover'/></SwiperSlide>
+                                <SwiperSlide><Image alt='Realizacja szafek' src={`/images/szafki/${img}`}   mb='1rem'h={['sm', 'sm', 'xl']} objectFit='cover'/></SwiperSlide>
                             ))}
                         </MySwiper>
                 </TabPanel>
                 <TabPanel>
                     <MySwiper>
                             {regalyImg.map(img => (
-                                <SwiperSlide><Image src={`/images/regaly/${img}`}   mb='1rem' h={['sm', 'sm', 'xl']} objectFit='cover'/></SwiperSlide>
+                                <SwiperSlide><Image alt='Realizacja regałów' src={`/images/regaly/${img}`}   mb='1rem' h={['sm', 'sm', 'xl']} objectFit='cover'/></SwiperSlide>
                             ))}
                         </MySwiper>
                 </TabPanel>
                 <TabPanel>
                     <MySwiper>
                             {pozostaleImg.map(img => (
-                                <SwiperSlide><Image src={`/images/pozostale/${img}`} mb='1rem' h={['sm', 'sm', 'xl']} objectFit='cover'/></SwiperSlide>
+                                <SwiperSlide><Image alt='Realizacja pozostałych mebli' src={`/images/pozostale/${img}`} mb='1rem' h={['sm', 'sm', 'xl']} objectFit='cover'/></SwiperSlide>
                             ))}
                         </MySwiper>
                 </TabPanel>
